@@ -80,8 +80,7 @@ export const Hero = () => {
 
       {/* Quran Verse */}
       <div className="absolute bottom-0 left-0 right-0 text-center text-gray-300 text-sm animate-fade-in-up">
-        <q className="font-arabic text-xl">يَمْحَقُ ٱللَّهُ ٱلرِّبَوٰا۟ وَيُرْبِى ٱلصَّدَقَـٰتِ</q>
-        <p className="mt-2">- سورة البقرة (٢:٢٧٦)</p>
+        
       </div>
 
       {/* Floating WhatsApp Button */}
