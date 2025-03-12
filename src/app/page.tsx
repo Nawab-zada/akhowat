@@ -6,17 +6,29 @@ import { WhyChooseUsSection } from "./components/Chosesus";
 import { PartnersCarousel } from "./components/Carousel";
 import { HowToApplySection } from "./components/Apply";
 import { Footer } from "./components/Footer";
+import { TeamMember } from "./components/Teammember";
 export default function Home() {
   return (
     <div className="">
       <Navbar/>
-      <Hero/>
-      <AboutLoanSection/>
-      <WhyChooseUsSection/>
-      <PartnersCarousel/>
-      <HowToApplySection/>
-      <Footer/>
-
+     <section id="hero">
+  <Hero />
+</section>
+<section id="about-loan">
+  <AboutLoanSection />
+</section>
+<section id="how-to-apply">
+  <HowToApplySection />
+</section>
+<section id="why-choose-us">
+  <WhyChooseUsSection />
+</section>
+<PartnersCarousel/>
+<TeamMember/>
+<section id="contact">
+  <Footer />
+</section>
+       
     </div>
   );
 }

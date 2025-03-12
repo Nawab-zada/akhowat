@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 export const WhyChooseUsSection = () => {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-white font-serif">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
@@ -60,7 +60,7 @@ export const WhyChooseUsSection = () => {
           <div className="bg-emerald-50 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
             <div className="relative h-48 w-full">
               <Image
-                src="/transparent.png" // Replace with your image
+                src="/ethical.png" // Replace with your image
                 alt="Transparent Process"
                 layout="fill"
                 objectFit="cover"

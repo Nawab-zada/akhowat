@@ -1,6 +1,7 @@
 'use client'
 import React, { useState } from 'react';
-import Link from 'next/link'; // If using Next.js, otherwise use react-router-dom or similar
+import Link from 'next/link';
+import { Link as ScrollLink } from 'react-scroll'; // Import react-scroll for smooth navigation
 
 export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -15,35 +16,62 @@ export const Navbar = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <Link href="/">
+            <ScrollLink
+              to="hero" // Scroll to the Hero section
+              smooth={true}
+              duration={500}
+              className="cursor-pointer"
+            >
               <img
                 src="/logo-1.png" // Replace with your logo
                 alt="Akhuwat Logo"
                 className="h-12 w-auto"
               />
-            </Link>
+            </ScrollLink>
           </div>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link href="/" className="text-gray-800 hover:text-emerald-600 transition-colors duration-300">
-              Home
-            </Link>
-            <Link href="/about" className="text-gray-800 hover:text-emerald-600 transition-colors duration-300">
-              About
-            </Link>
-            <Link href="/apply-now" className="text-gray-800 hover:text-emerald-600 transition-colors duration-300">
-              Apply Now
-            </Link>
-            <Link href="/contact" className="text-gray-800 hover:text-emerald-600 transition-colors duration-300">
-              Contact
-            </Link>
-            <Link
-              href="/login"
-              className="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-2 rounded-lg transition-colors duration-300"
+            <ScrollLink
+              to="hero" // Scroll to the Hero section
+              smooth={true}
+              duration={500}
+              className="text-gray-800 hover:text-emerald-600 transition-colors duration-300 cursor-pointer"
             >
-              Login
-            </Link>
+              Home
+            </ScrollLink>
+            <ScrollLink
+              to="about-loan" // Scroll to the About Loan section
+              smooth={true}
+              duration={500}
+              className="text-gray-800 hover:text-emerald-600 transition-colors duration-300 cursor-pointer"
+            >
+              About
+            </ScrollLink>
+            <ScrollLink
+              to="why-choose-us" // Scroll to the Why Choose Us section
+              smooth={true}
+              duration={500}
+              className="text-gray-800 hover:text-emerald-600 transition-colors duration-300 cursor-pointer"
+            >
+              Why Choose Us
+            </ScrollLink>
+            <ScrollLink
+              to="how-to-apply" // Scroll to the How to Apply section
+              smooth={true}
+              duration={500}
+              className="text-gray-800 hover:text-emerald-600 transition-colors duration-300 cursor-pointer"
+            >
+              How to Apply
+            </ScrollLink>
+            <ScrollLink
+              to="contact" // Scroll to the Contact section
+              smooth={true}
+              duration={500}
+              className="text-gray-800 hover:text-emerald-600 transition-colors duration-300 cursor-pointer"
+            >
+              Contact
+            </ScrollLink>
           </div>
 
           {/* Mobile Menu Button */}
@@ -83,28 +111,55 @@ export const Navbar = () => {
         {isMenuOpen && (
           <div className="md:hidden bg-white shadow-lg">
             <div className="px-4 pt-4 pb-6 space-y-4">
-              <Link href="/" className="block text-gray-800 hover:text-emerald-600 transition-colors duration-300">
-                Home
-              </Link>
-              <Link href="/about" className="block text-gray-800 hover:text-emerald-600 transition-colors duration-300">
-                About
-              </Link>
-              <Link href="/apply-now" className="block text-gray-800 hover:text-emerald-600 transition-colors duration-300">
-                Apply Now
-              </Link>
-              <Link href="/contact" className="block text-gray-800 hover:text-emerald-600 transition-colors duration-300">
-                Contact
-              </Link>
-              <Link
-                href="/login"
-                className="block bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-2 rounded-lg text-center transition-colors duration-300"
+              <ScrollLink
+                to="hero" // Scroll to the Hero section
+                smooth={true}
+                duration={500}
+                className="block text-gray-800 hover:text-emerald-600 transition-colors duration-300 cursor-pointer"
+                onClick={toggleMenu}
               >
-                Login
-              </Link>
+                Home
+              </ScrollLink>
+              <ScrollLink
+                to="about-loan" // Scroll to the About Loan section
+                smooth={true}
+                duration={500}
+                className="block text-gray-800 hover:text-emerald-600 transition-colors duration-300 cursor-pointer"
+                onClick={toggleMenu}
+              >
+                About
+              </ScrollLink>
+              <ScrollLink
+                to="why-choose-us" // Scroll to the Why Choose Us section
+                smooth={true}
+                duration={500}
+                className="block text-gray-800 hover:text-emerald-600 transition-colors duration-300 cursor-pointer"
+                onClick={toggleMenu}
+              >
+                Why Choose Us
+              </ScrollLink>
+              <ScrollLink
+                to="how-to-apply" // Scroll to the How to Apply section
+                smooth={true}
+                duration={500}
+                className="block text-gray-800 hover:text-emerald-600 transition-colors duration-300 cursor-pointer"
+                onClick={toggleMenu}
+              >
+                How to Apply
+              </ScrollLink>
+              <ScrollLink
+                to="contact" // Scroll to the Contact section
+                smooth={true}
+                duration={500}
+                className="block text-gray-800 hover:text-emerald-600 transition-colors duration-300 cursor-pointer"
+                onClick={toggleMenu}
+              >
+                Contact
+              </ScrollLink>
             </div>
           </div>
         )}
       </div>
     </nav>
   );
-};
+};  

@@ -13,13 +13,13 @@ export const Hero = () => {
     },
     {
       id: 2,
-      image: '/sider1.png',
+      image: '/6.png',
       title: 'Education for All',
       description: 'Supporting students with ethical financial solutions.',
     },
     {
       id: 3,
-      image: '/side2.png',
+      image: '/7.png',
       title: 'Small Business Growth',
       description: 'Helping entrepreneurs achieve their dreams.',
     },
@@ -57,13 +57,13 @@ export const Hero = () => {
       <div className="absolute inset-0 bg-black/50 z-10"></div>
 
       {/* Content */}
-      <div className="relative z-20 text-center text-white px-4">
+      <div className="relative z-20 text-center text-white px-4 font-serif">
         <h1 className="text-4xl md:text-6xl font-bold mb-4">
           {slides[currentSlide].title}
         </h1>
         <p className="text-lg md:text-xl mb-8">{slides[currentSlide].description}</p>
         <button
-          onClick={() => window.open('https://wa.me/923001234567', '_blank')}
+          onClick={() => window.open('https://wa.me/+923424598393', '_blank')}
           className="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-4 rounded-lg flex items-center justify-center mx-auto transition-all duration-300 hover:scale-105"
         >
           <img

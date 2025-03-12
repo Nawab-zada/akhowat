@@ -23,7 +23,7 @@ export const PartnersCarousel = () => {
   }, [partners.length]);
 
   return (
-    <section className=" py-2 bg-white">
+    <section className=" py-2 bg-white font-serif">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className=" text-black text-4xl md:text-5xl font-bold ">
