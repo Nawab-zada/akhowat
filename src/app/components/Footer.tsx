@@ -4,7 +4,7 @@ import React from 'react';
 
 export const Footer = () => {
   return (
-    <footer className="bg-emerald-900 text-white">
+    <footer className="bg-black text-white">
       {/* Fixed Buttons */}
       <div className="fixed bottom-8 right-8 z-50 flex flex-col space-y-4">
         {/* WhatsApp Button */}

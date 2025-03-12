@@ -23,13 +23,13 @@ export const PartnersCarousel = () => {
   }, [partners.length]);
 
   return (
-    <section className=" py-20 bg-gradient-to-br from-slate-900 via-teal-900 to-emerald-900">
+    <section className=" py-2">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-emerald-400 to-teal-300 bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-5xl font-bold ">
             Our Partners
           </h2>
-          <p className="mt-4 text-lg text-gray-300 max-w-2xl mx-auto">
+          <p className="mt-4 text-lg  max-w-2xl mx-auto">
             We are proud to collaborate with these esteemed organizations.
           </p>
         </div>
