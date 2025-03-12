@@ -10,7 +10,7 @@ export const Navbar = () => {
   };
 
   return (
-    <nav className="bg-emerald-900/90 backdrop-blur-md border-b border-emerald-800/50 fixed w-full z-50">
+    <nav className="bg-white shadow-lg fixed w-full z-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
@@ -18,34 +18,39 @@ export const Navbar = () => {
             <Link href="/">
               <img
                 src="/logo-1.png" // Replace with your logo
-                alt="Akhowat Logo"
-                className="h-13 w-auto"
+                alt="Akhuwat Logo"
+                className="h-12 w-auto"
               />
             </Link>
           </div>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link href="/" className="text-gray-200 hover:text-emerald-400 transition-colors duration-300">
+            <Link href="/" className="text-gray-800 hover:text-emerald-600 transition-colors duration-300">
               Home
             </Link>
-            <Link href="/about" className="text-gray-200 hover:text-emerald-400 transition-colors duration-300">
+            <Link href="/about" className="text-gray-800 hover:text-emerald-600 transition-colors duration-300">
               About
             </Link>
-            <Link href="/apply-now" className="text-gray-200 hover:text-emerald-400 transition-colors duration-300">
+            <Link href="/apply-now" className="text-gray-800 hover:text-emerald-600 transition-colors duration-300">
               Apply Now
             </Link>
-            <Link href="/contact" className="text-gray-200 hover:text-emerald-400 transition-colors duration-300">
+            <Link href="/contact" className="text-gray-800 hover:text-emerald-600 transition-colors duration-300">
               Contact
             </Link>
-            
+            <Link
+              href="/login"
+              className="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-2 rounded-lg transition-colors duration-300"
+            >
+              Login
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
           <div className="md:hidden flex items-center">
             <button
               onClick={toggleMenu}
-              className="text-gray-200 hover:text-emerald-400 focus:outline-none"
+              className="text-gray-800 hover:text-emerald-600 focus:outline-none"
             >
               <svg
                 className="h-8 w-8"
@@ -76,21 +81,26 @@ export const Navbar = () => {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden bg-emerald-900/95 backdrop-blur-md border-t border-emerald-800/50">
+          <div className="md:hidden bg-white shadow-lg">
             <div className="px-4 pt-4 pb-6 space-y-4">
-              <Link href="/" className="block text-gray-200 hover:text-emerald-400 transition-colors duration-300">
+              <Link href="/" className="block text-gray-800 hover:text-emerald-600 transition-colors duration-300">
                 Home
               </Link>
-              <Link href="/about" className="block text-gray-200 hover:text-emerald-400 transition-colors duration-300">
+              <Link href="/about" className="block text-gray-800 hover:text-emerald-600 transition-colors duration-300">
                 About
               </Link>
-              <Link href="/apply-now" className="block text-gray-200 hover:text-emerald-400 transition-colors duration-300">
+              <Link href="/apply-now" className="block text-gray-800 hover:text-emerald-600 transition-colors duration-300">
                 Apply Now
               </Link>
-              <Link href="/contact" className="block text-gray-200 hover:text-emerald-400 transition-colors duration-300">
+              <Link href="/contact" className="block text-gray-800 hover:text-emerald-600 transition-colors duration-300">
                 Contact
               </Link>
-             
+              <Link
+                href="/login"
+                className="block bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-2 rounded-lg text-center transition-colors duration-300"
+              >
+                Login
+              </Link>
             </div>
           </div>
         )}

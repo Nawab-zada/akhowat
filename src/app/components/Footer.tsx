@@ -4,7 +4,7 @@ import React from 'react';
 
 export const Footer = () => {
   return (
-    <footer className="bg-gradient-to-br from-slate-900 via-teal-900 to-emerald-900 text-gray-300">
+    <footer className="bg-emerald-900 text-white">
       {/* Fixed Buttons */}
       <div className="fixed bottom-8 right-8 z-50 flex flex-col space-y-4">
         {/* WhatsApp Button */}
@@ -37,7 +37,7 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
           {/* About Akhuwat Loan */}
           <div className="mb-8">
-            <h3 className="text-2xl font-bold text-white mb-4">About Akhuwat Loan</h3>
+            <h3 className="text-2xl font-bold mb-4">About Akhuwat Loan</h3>
             <p className="text-gray-300">
               Akhuwat offers interest-free loans to empower individuals and communities. Whether you need funds for a small business, education, or community development, we are here to help.
             </p>
@@ -45,7 +45,7 @@ export const Footer = () => {
 
           {/* Useful Links */}
           <div className="mb-8">
-            <h3 className="text-2xl font-bold text-white mb-4">Useful Links</h3>
+            <h3 className="text-2xl font-bold mb-4">Useful Links</h3>
             <ul className="space-y-2">
               <li>
                 <a href="/" className="text-gray-300 hover:text-emerald-400 transition-colors duration-300">
@@ -72,7 +72,7 @@ export const Footer = () => {
 
           {/* Contact Information */}
           <div className="mb-8">
-            <h3 className="text-2xl font-bold text-white mb-4">Contact Us</h3>
+            <h3 className="text-2xl font-bold mb-4">Contact Us</h3>
             <ul className="space-y-2">
               <li className="text-gray-300">
                 <span className="font-semibold">Phone:</span> +92 300 1234567
@@ -88,7 +88,7 @@ export const Footer = () => {
 
           {/* Social Media Links */}
           <div className="mb-8">
-            <h3 className="text-2xl font-bold text-white mb-4">Follow Us</h3>
+            <h3 className="text-2xl font-bold mb-4">Follow Us</h3>
             <div className="flex space-x-4">
               <a
                 href="https://facebook.com/akhuwat"
@@ -131,7 +131,7 @@ export const Footer = () => {
         </div>
 
         {/* Footer Bottom */}
-        <div className="border-t border-emerald-800/50 pt-8 mt-8 text-center">
+        <div className="border-t border-emerald-800 pt-8 mt-8 text-center">
           <p className="text-gray-300">
             © {new Date().getFullYear()} Akhuwat Foundation. All rights reserved.
           </p>
