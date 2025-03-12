@@ -11,7 +11,7 @@ export const AboutLoanSection = () => {
             About Akhuwat Loan
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Akhuwat offers interest-free loans to empower individuals and communities. Whether you need funds for a small business, education, or community development, we are here to help.
+            Akhuwat offers interest-free loans from 1 lakh to 30 lakh to  empower individuals and communities. Whether you need funds for a small business, education, or community development, we are here to help.
           </p>
         </div>
 
