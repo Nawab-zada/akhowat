@@ -26,10 +26,10 @@ export const PartnersCarousel = () => {
     <section className=" py-2 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold ">
+          <h2 className=" text-black text-4xl md:text-5xl font-bold ">
             Our Partners
           </h2>
-          <p className="mt-4 text-lg  max-w-2xl mx-auto">
+          <p className=" text-black mt-4 text-lg  max-w-2xl mx-auto">
             We are proud to collaborate with these esteemed organizations.
           </p>
         </div>
