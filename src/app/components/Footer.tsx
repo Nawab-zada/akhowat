@@ -21,7 +21,7 @@ export const Footer = () => {
 
         {/* Call Button */}
         <button
-          onClick={() => window.open('tel:+9234701522259', '_blank')}
+          onClick={() => window.open('tel:+923470152259', '_blank')}
           className="bg-emerald-600 hover:bg-emerald-700 text-white p-4 rounded-full shadow-xl transform transition-all duration-300 hover:scale-110"
         >
           <img
