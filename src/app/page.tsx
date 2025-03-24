@@ -7,6 +7,7 @@ import { PartnersCarousel } from "./components/Carousel";
 import { HowToApplySection } from "./components/Apply";
 import { Footer } from "./components/Footer";
 import { TeamMember } from "./components/Teammember";
+import StickyApplyButton from "./components/Stickybutton";
 export default function Home() {
   return (
     <div className="">
@@ -14,6 +15,7 @@ export default function Home() {
      <section id="hero">
   <Hero />
 </section>
+<StickyApplyButton/>
 <section id="about-loan">
   <AboutLoanSection />
 </section>
