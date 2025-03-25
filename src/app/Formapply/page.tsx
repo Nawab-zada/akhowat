@@ -107,6 +107,7 @@ export default function LoanApplicationForm() {
           <option value="business">Business Loan</option>
           <option value="home">Home Loan</option>
           <option value="car">Car Loan</option>
+          <option value="education">education loan</option>
         </motion.select>
           <h4>Select laon amount</h4>
         <motion.select
@@ -115,13 +116,18 @@ export default function LoanApplicationForm() {
           name="loanAmount"
           onChange={handleChange}
           required
-          className="p-2 border  rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white"
+          className="p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white"
         >
-          <option value="" disabled selected>--Select-</option>
-          <option value="5000">5,000</option>
-          <option value="10000">10,000</option>
-          <option value="20000">20,000</option>
+          <option value="" disabled selected>--Select--</option>
           <option value="50000">50,000</option>
+          <option value="100000">1,00,000</option>
+          <option value="200000">2,00,000</option>
+          <option value="500000">5,00,000</option>
+          <option value="1000000">10,00,000</option>
+          <option value="2000000">20,00,000</option>
+          <option value="3000000">30,00,000</option>
+          <option value="4000000">40,00,000</option>
+          <option value="5000000">50,00,000</option>
         </motion.select>
 
         <motion.button
