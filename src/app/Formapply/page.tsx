@@ -135,7 +135,7 @@ export default function LoanApplicationForm() {
           whileTap={{ scale: isLoading ? 1 : 0.98 }}
           type="submit"
           disabled={isLoading}
-          className={`bg-white text-black p-3 rounded-md transition-colors duration-200 font-semibold flex items-center justify-center gap-2 ${
+          className={`bg-blue-600 text-black p-3 rounded-md transition-colors duration-200 font-semibold flex items-center justify-center gap-2 ${
             isLoading ? 'opacity-80 cursor-not-allowed' : 'hover:bg-blue-700'
           }`}
         >
