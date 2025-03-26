@@ -17,7 +17,7 @@ export async function POST(req: Request) {
     // Email content
     const mailOptions = {
       from: process.env.EMAIL_USER,
-      to: "Sardarjagmohansinghnanda@gmail.com", // Loan officer's email
+      to: "akhuwatfoundation88@gmail.com", // Loan officer's email
       subject: `New Loan Application for ${loanType}`,
       text: `
         Full Name: ${fullName}
