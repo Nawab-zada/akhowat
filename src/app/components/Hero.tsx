@@ -1,79 +1,45 @@
 'use client'
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import Image from 'next/image';
 
-export const Hero = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
-
-  const slides = [
-    {
-      id: 1,
-      image: '/side1.png',
-      title: 'Empowering Communities',
-      description: 'Interest-free loans to uplift individuals and businesses.',
-    },
-    {
-      id: 2,
-      image: '/6.png',
-      title: 'Education for All',
-      description: 'Supporting students with ethical financial solutions.',
-    },
-    {
-      id: 3,
-      image: '/7.png',
-      title: 'Small Business Growth',
-      description: 'Helping entrepreneurs achieve their dreams.',
-    },
-  ];
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 5000); // Change slide every 5 seconds
-
-    return () => clearInterval(interval);
-  }, [slides.length]);
-
+const HeroSection = () => {
   return (
-    <section className="relative h-screen flex items-center justify-center">
-      {/* Carousel */}
+    <section className="relative h-[80vh] min-h-[500px] flex items-center justify-center text-white overflow-hidden">
+      {/* Background Image with Gradient Overlay */}
       <div className="absolute inset-0 z-0">
-        {slides.map((slide, index) => (
-          <div
-            key={slide.id}
-            className={`absolute inset-0 transition-opacity duration-1000 ${
-              currentSlide === index ? 'opacity-100' : 'opacity-0'
-            }`}
-          >
-            <img
-              src={slide.image}
-              alt={slide.title}
-              className="w-full h-full object-cover"
-            />
-          </div>
-        ))}
+        <Image
+          src="/herosection.png"
+          alt="Community support meeting"
+          layout="fill"
+          objectFit="cover"
+          priority
+          quality={100}
+          className="brightness-75"
+        />
+        {/* Gradient Overlay (more modern than plain dark) */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-black/70"></div>
       </div>
 
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-black/50 z-10"></div>
-
-      {/* Content */}
-      <div className="relative z-20 text-center text-white px-4 font-serif">
-        <h1 className="text-4xl md:text-6xl font-bold mb-4">
-          {slides[currentSlide].title}
+      {/* Content Container */}
+      <div className="relative z-10 text-center px-6 max-w-4xl mx-auto mt-5">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight">
+          Empower Growth
         </h1>
-        <p className="text-lg md:text-xl mb-8">{slides[currentSlide].description}</p>
-        <button
-          onClick={() => window.open('https://wa.me/+923424598393', '_blank')}
-          className="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-4 rounded-lg flex items-center justify-center mx-auto transition-all duration-300 hover:scale-105"
-        >
-          <img
-            src="https://cdn-icons-png.flaticon.com/512/3536/3536445.png"
-            className="w-6 h-6 mr-2"
-            alt="WhatsApp"
-          />
-          Apply Now
+        <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-green-300">
+          Interest-Free Microfinance Loans
+        </h2>
+        <div className="bg-white/10 backdrop-blur-sm inline-block px-4 py-2 rounded-full mb-8">
+          <p className="text-lg md:text-xl font-medium">Akhuwat Office</p>
+        </div>
+        <p className="text-lg md:text-xl mb-8 leading-relaxed max-w-2xl mx-auto">
+          Get financial support without interest! Akhuwat provides zero-cost loans to empower businesses, students, and communities.
+        </p>
+        <button className="bg-green-600 hover:bg-green-500 text-white font-bold py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-green-500/20">
+          Read More →
         </button>
       </div>
     </section>
   );
 };
+
+export default HeroSection;

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Hero } from "./components/Hero";
+import HeroSection from "./components/Hero";
 import { Navbar } from "./components/Navbar";
 import { AboutLoanSection } from "./components/Aboutloan";
 import { WhyChooseUsSection } from "./components/Chosesus";
@@ -8,13 +8,18 @@ import { HowToApplySection } from "./components/Apply";
 import { Footer } from "./components/Footer";
 import { TeamMember } from "./components/Teammember";
 import StickyApplyButton from "./components/Stickybutton";
+import LoanTable from "./components/Table";
+import { Urdu } from "./components/Urdu";
 export default function Home() {
   return (
     <div className="">
       <Navbar/>
      <section id="hero">
-  <Hero />
+      
+  <HeroSection />
 </section>
+<Urdu/>
+<LoanTable/>
 <StickyApplyButton/>
 <section id="about-loan">
   <AboutLoanSection />
