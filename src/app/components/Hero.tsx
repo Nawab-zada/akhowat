@@ -3,7 +3,7 @@ import React from 'react';
 
 const HeroSection = () => {
   return (
-    <section className="bg-white py-20 md:py-32 px-6">
+    <section className="bg-white py-20 md:py-32 px-6 mt-6">
       <div className="max-w-6xl mx-auto text-center">
         {/* Badge */}
         <div className="inline-flex items-center justify-center mb-8 px-4 py-2 rounded-full bg-green-100 border border-green-200">
