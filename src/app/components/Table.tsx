@@ -16,7 +16,7 @@ const LoanTable = () => {
     <div className="overflow-x-auto bg-white rounded-lg shadow-md">
       <h2 className="text-2xl font-bold mb-4 text-center mt-4 text-green-600">Loan Installment Plan</h2>
       <table className="min-w-full divide-y divide-gray-200">
-        <thead className="bg-green-600 text-white">
+        <thead className="bg-gray-200 text-black">
           <tr>
             <th className="px-2 py-3 text-left text-xs font-medium uppercase tracking-wider">
               Loan Amount
