@@ -1,142 +1,82 @@
 'use client'
+'use client'
+import React from 'react'
 
-import React from 'react';
-
-export const Footer = () => {
+const Footer = () => {
   return (
-    <footer className="bg-emerald-50  text-white mt-4 font-serif">
-      {/* Fixed Buttons */}
-      <div className="fixed bottom-8 right-8 z-50 flex flex-col space-y-4">
-        {/* WhatsApp Button */}
-        <button
-          onClick={() => window.open('https://wa.me/+923341145751', '_blank')}
-          className="bg-green-600 hover:bg-green-700 text-white p-4 rounded-full shadow-xl transform transition-all duration-300 hover:scale-110"
-        >
-          <img
-            src="https://cdn-icons-png.flaticon.com/512/3536/3536445.png"
-            className="w-6 h-6"
-            alt="WhatsApp"
-          />
-        </button>
-
-        {/* Call Button */}
-        <button
-          onClick={() => window.open('tel:+923341145751', '_blank')}
-          className="bg-emerald-600 hover:bg-emerald-700 text-white p-4 rounded-full shadow-xl transform transition-all duration-300 hover:scale-110"
-        >
-          <img
-            src="https://cdn-icons-png.flaticon.com/512/159/159832.png"
-            className="w-6 h-6"
-            alt="Call"
-          />
-        </button>
-      </div>
-
-      {/* Footer Content */}
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 text-black">
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
-          {/* About Akhuwat Loan */}
-          <div className="mb-8">
-            <h3 className="text-2xl font-bold mb-4">About Akhuwat Loan</h3>
-            <p className=" text-black">
-              Akhuwat offers interest-free loans to empower individuals and communities. Whether you need funds for a small business, education, or community development, we are here to help.
-            </p>
-          </div>
-
-          {/* Useful Links */}
-          <div className="mb-8 text-black">
-            <h3 className="text-2xl font-bold mb-4">Useful Links</h3>
-            <ul className="space-y-2">
-              <li>
-                <a href="/" className="text-black hover:text-emerald-400 transition-colors duration-300">
-                  Home
-                </a>
-              </li>
-              <li>
-                <a href="/about" className="text-black hover:text-emerald-400 transition-colors duration-300">
-                  About
-                </a>
-              </li>
-              <li>
-                <a href="/apply-now" className="text-black hover:text-emerald-400 transition-colors duration-300">
-                  Apply Now
-                </a>
-              </li>
-              <li>
-                <a href="/contact" className="text-black hover:text-emerald-400 transition-colors duration-300">
-                  Contact
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          {/* Contact Information */}
-          <div className="mb-8 text-black">
-            <h3 className="text-2xl font-bold mb-4">Contact Us</h3>
-            <ul className="space-y-2">
-              <li className="text-black">
-                <span className="font-semibold">Phone:</span> +92342-459-839-3
-              </li>
-              <li className="text-black">
-                <span className="font-semibold">Email:</span> info@akhuwat.org
-              </li>
-              <li className="text-black">
-                <span className="font-semibold text-black">Address:</span> 123 Akhuwat Street, Lahore, Pakistan
-              </li>
-            </ul>
-          </div>
-
-          {/* Social Media Links */}
-          <div className="mb-8">
-            <h3 className="text-2xl font-bold mb-4">Follow Us</h3>
-            <div className="flex space-x-4">
-              <a
-                href="https://facebook.com/akhuwat"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-300 hover:text-emerald-400 transition-colors duration-300"
-              >
-                <img
-                  src="https://cdn-icons-png.flaticon.com/512/1384/1384053.png"
-                  className="w-6 h-6"
-                  alt="Facebook"
-                />
-              </a>
-              <a
-                href="https://twitter.com/akhuwat"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-300 hover:text-emerald-400 transition-colors duration-300"
-              >
-                <img
-                  src="https://cdn-icons-png.flaticon.com/512/1384/1384049.png"
-                  className="w-6 h-6"
-                  alt="Twitter"
-                />
-              </a>
-              <a
-                href="https://instagram.com/akhuwat"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-300 hover:text-emerald-400 transition-colors duration-300"
-              >
-                <img
-                  src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png"
-                  className="w-6 h-6"
-                  alt="Instagram"
-                />
-              </a>
-            </div>
-          </div>
+    <footer className="bg-gray-900 text-white px-4 py-10 mt-10 relative">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+        {/* About Section */}
+        <div>
+          <h3 className="text-lg font-semibold mb-4">About Us</h3>
+          <p className="text-sm">
+            We are dedicated to providing interest-free loans to help people achieve their goals. With a strong foundation in trust and community support, we strive to uplift lives and create opportunities.
+          </p>
         </div>
 
-        {/* Footer Bottom */}
-        <div className="border-t border-emerald-800 pt-8 mt-8 text-center">
-          <p className="text-black">
-            © {new Date().getFullYear()} Akhuwat Foundation. All rights reserved.
-          </p>
+        {/* Important Links */}
+        <div>
+          <h3 className="text-lg font-semibold mb-4">Important Links</h3>
+          <ul className="text-sm space-y-2">
+            <li><a href="#" className="hover:underline">Home</a></li>
+            <li><a href="#" className="hover:underline">About</a></li>
+            <li><a href="#" className="hover:underline">Loans</a></li>
+            <li><a href="#" className="hover:underline">Contact</a></li>
+          </ul>
+        </div>
+
+        {/* Contact Info */}
+        <div>
+          <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
+          <p className="text-sm">Email: info@akhuwat.org</p>
+          <p className="text-sm">Phone: +966 59 843 0390</p>
+          <p className="text-sm">Address: Lahore, Pakistan</p>
+        </div>
+      </div>
+
+      <div className="mt-10 border-t border-gray-700 pt-6 text-center text-sm text-gray-400">
+        &copy; {new Date().getFullYear()} Akhuwat Foundation. All rights reserved.
+      </div>
+
+      {/* Floating Buttons */}
+      <div className="fixed bottom-8 right-4 z-50 flex flex-col space-y-4 items-end">
+        {/* WhatsApp */}
+        <div className="flex items-center bg-white px-4 py-2 rounded-full shadow-xl gap-3">
+          <button
+            onClick={() => window.open('https://wa.me/+966 59 843 0390', '_blank')}
+            className="bg-green-600 hover:bg-green-700 text-white p-2 rounded-full transform transition-all duration-300 hover:scale-110"
+          >
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/3536/3536445.png"
+              className="w-2 h-2"
+              alt="WhatsApp"
+            />
+          </button>
+          <span className="text-sm font-semibold text-gray-800">WhatsApp us</span>
+        </div>
+
+        {/* Call */}
+        <div className="flex items-center bg-white px-4 py-2 rounded-full shadow-xl gap-3">
+          <button
+            onClick={() => window.open('tel:+966 59 843 0390', '_blank')}
+            className="bg-emerald-600 hover:bg-emerald-700 text-white p-2 rounded-full transform transition-all duration-300 hover:scale-110"
+          >
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/159/159832.png"
+              className="w-2 h-2"
+              alt="Call"
+            />
+          </button>
+          <span className="text-sm font-semibold text-gray-800">Call us now</span>
         </div>
       </div>
     </footer>
-  );
-};
+  )
+}
+
+export default Footer
+
+
+
+
+

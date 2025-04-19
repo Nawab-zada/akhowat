@@ -4,7 +4,7 @@ import React from 'react';
 
 const HeroSection = () => {
   return (
-    <section className="bg-gradient-to-b from-white to-green-50 py-24 px-6 mt-6">
+    <section className="bg-gradient-to-b from-white to-green-50  px-6 mt-6">
       <div className="max-w-6xl mx-auto text-center">
 
         {/* Badge */}

@@ -5,7 +5,7 @@ import AboutLoanSection from "./components/Aboutloan";
 
 import { PartnersCarousel } from "./components/Carousel";
 import { HowToApplySection } from "./components/Apply";
-import { Footer } from "./components/Footer";
+import Footer from "./components/Footer";
 
 import StickyApplyButton from "./components/Stickybutton";
 import LoanTable from "./components/Table";
