@@ -43,12 +43,12 @@ const Footer = () => {
         {/* WhatsApp */}
         <div className="flex items-center bg-white px-4 py-2 rounded-full shadow-xl gap-3">
           <button
-            onClick={() => window.open('https://wa.me/+966 59 843 0390', '_blank')}
+            onClick={() => window.open('https://wa.me/+9203341145751', '_blank')}
             className="bg-green-600 hover:bg-green-700 text-white p-2 rounded-full transform transition-all duration-300 hover:scale-110"
           >
             <img
               src="https://cdn-icons-png.flaticon.com/512/3536/3536445.png"
-              className="w-2 h-2"
+              className="w-3 h-3"
               alt="WhatsApp"
             />
           </button>
@@ -58,7 +58,7 @@ const Footer = () => {
         {/* Call */}
         <div className="flex items-center bg-white px-4 py-2 rounded-full shadow-xl gap-3">
           <button
-            onClick={() => window.open('tel:+966 59 843 0390', '_blank')}
+            onClick={() => window.open('tel:+9203341145751', '_blank')}
             className="bg-emerald-600 hover:bg-emerald-700 text-white p-2 rounded-full transform transition-all duration-300 hover:scale-110"
           >
             <img
