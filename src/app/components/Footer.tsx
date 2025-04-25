@@ -29,7 +29,7 @@ const Footer = () => {
         <div>
           <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
           <p className="text-sm">Email: info@akhuwat.org</p>
-          <p className="text-sm">Phone: +966 59 843 0390</p>
+          <p className="text-sm">Phone: +9203341145751</p>
           <p className="text-sm">Address: Lahore, Pakistan</p>
         </div>
       </div>
