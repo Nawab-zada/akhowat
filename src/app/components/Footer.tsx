@@ -48,7 +48,7 @@ const Footer = () => {
           >
             <img
               src="https://cdn-icons-png.flaticon.com/512/3536/3536445.png"
-              className="w-3 h-3"
+              className="w-5 h-5"
               alt="WhatsApp"
             />
           </button>
@@ -63,7 +63,7 @@ const Footer = () => {
           >
             <img
               src="https://cdn-icons-png.flaticon.com/512/159/159832.png"
-              className="w-2 h-2"
+              className="w-4 h-4"
               alt="Call"
             />
           </button>
