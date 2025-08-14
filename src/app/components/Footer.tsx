@@ -29,7 +29,7 @@ const Footer = () => {
         <div>
           <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
           <p className="text-sm">Email: info@akhuwat.org</p>
-          <p className="text-sm">Phone: +9203081907220</p>
+          <p className="text-sm">Phone: +9203471964566</p>
           <p className="text-sm">Address: Lahore, Pakistan</p>
         </div>
       </div>
@@ -43,7 +43,7 @@ const Footer = () => {
         {/* WhatsApp */}
         <div className="flex items-center bg-white px-4 py-2 rounded-full shadow-xl gap-3">
           <button
-            onClick={() => window.open('https://wa.me/+9203081907220', '_blank')}
+            onClick={() => window.open('https://wa.me/+9203471964566', '_blank')}
             className="bg-green-600 hover:bg-green-700 text-white p-2 rounded-full transform transition-all duration-300 hover:scale-110"
           >
             <img

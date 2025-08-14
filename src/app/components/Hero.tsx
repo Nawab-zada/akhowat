@@ -15,7 +15,7 @@ const HeroSection = () => {
         <div className="w-full bg-red-600 text-white py-2 overflow-hidden relative z-10">
           <div className="max-w-6xl mx-auto flex items-center justify-between px-4">
             <div className="text-sm font-semibold whitespace-nowrap">
-              Headoffice No: <span className="text-white ml-1">+9203341145751</span>
+              Headoffice No: <span className="text-white ml-1">+9203471964566</span>
             </div>
             <div className="marquee-container overflow-hidden w-3/4 relative">
               <div className="marquee whitespace-nowrap animate-marquee text-sm font-medium text-yellow-300">
