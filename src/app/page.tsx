@@ -7,7 +7,7 @@ import { PartnersCarousel } from "./components/Carousel";
 import { HowToApplySection } from "./components/Apply";
 import Footer from "./components/Footer";
 
-import StickyApplyButton from "./components/Stickybutton";
+
 import LoanTable from "./components/Table";
 import { Urdu } from "./components/Urdu";
 import Qasm from "./components/Qasm";
@@ -21,7 +21,7 @@ export default function Home() {
 </section>
 <Urdu/>
 <LoanTable/>
-<StickyApplyButton/>
+
 <section id="about-loan">
   <AboutLoanSection />
 </section>
