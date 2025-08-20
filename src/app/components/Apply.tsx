@@ -68,7 +68,7 @@ export const HowToApplySection = () => {
             Contact us <span className="text-emerald-700 font-semibold">only on WhatsApp</span>.
           </p>
           <button
-            onClick={() => window.open('https://wa.me/+923424598393', '_blank')}
+            onClick={() => window.open('https://wa.me/+9203471964566', '_blank')}
             className="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-4 rounded-lg inline-flex items-center justify-center transition-all duration-300 hover:scale-105"
           >
             <img
